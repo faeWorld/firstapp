@@ -1,0 +1,109 @@
+/* Navbar.css */
+
+/* General styling for the navbar */
+.navbar {
+    background-color: #ffffff00; /* Background color of the navbar */
+    color: black; /* Text color of the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left, center, and right */
+    align-items: center; /* Center items vertically */
+    padding: 10px 10px; /* Padding inside the navbar */
+    font-family: 'Open Sans', serif; /* Font family for the text */
+    height:30px;
+  }
+  
+  /* Styling for the left side (globe icon) */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .globe-icon {
+    height: 30px; /* Adjust the height to fit your design */
+    width: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Pointer cursor for the icon */
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+    z-index: 1;
+  }
+  
+  .dropdown-content select {
+    background: none;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: transparent;
+    
+  }
+  
+  /* Styling for the center (navbar links) */
+  .navbar-links {
+    list-style: none; /* Remove bullets from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between links */
+    justify-content: center; /* Center the links */
+    flex-grow: 1; /* Allow it to grow to fill available space */
+    border-radius: 5%;
+  }
+  
+  /* Styling for each link */
+  .navbar-links li {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Link styling */
+  .navbar-links a {
+    color: rgb(1, 1, 1); /* Text color of the links */
+    text-decoration: none; /* Remove underline from the links */
+    font-size: 15px; /* Font size of the links */
+    font-family: 'Open Sans', serif; /* Apply the font to the links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 5px;
+  }
+  
+
+  /* Hover effect for the links */
+  .navbar-links a:hover , .navbar-links .active{
+    color: #000000; /* Text color when hovering over links */
+    background-color: #FE828C;
+  }
+
+  /* Styling for the logo */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    height: 40px; /* Adjust the height to fit your design */
+    width: auto; /* Maintain aspect ratio */
+  }
+  /* Updated styling for active link */
+.navbar-links a.active {
+  color: #000000; /* Adjust text color as needed */
+  background-color: #FE828C; /* Background color for active link */
+  padding: 5px 10px; /* Optional: add padding to improve visual appearance */
+  border-radius: 5px; /* Match the border radius with other links */
+}
+

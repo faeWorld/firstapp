@@ -1,0 +1,137 @@
+/* src/pages/home.css */
+
+.title {
+  position: absolute;
+  left: 884px;
+  top: 202px;
+  width: 350px; /* Adjust width as needed */
+  height: 203px;
+  display: flex;
+  font-family: 'Inknut Antiqua';
+  font-weight: bold;
+  font-size: 50px;
+  color: #000080;
+  line-height: 100%;
+  align-items: top;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.image {
+ 
+  
+  height: auto;
+  border-radius: 0px;
+  
+}
+
+.image4 {
+  position: absolute;
+  width: 60vw; /* Adjust width to fit the screen */
+    height: 60vh; /* Adjust height to fit the screen */
+  left: 100%; 
+  bottom: 10px; /* Align at the bottom */
+  transform: translateX(-50%) rotate(0deg); /* Center horizontally and apply rotation */
+  border-radius: 0px; /* Border radius from Figma */
+  animation: ripple 10s infinite;
+  mix-blend-mode: multiply; /* Optional: Blends the image with the background */
+  z-index: 3; /* Ensure it's on top */
+}
+
+
+
+.image1 {
+  width: 261.95px; /* Width from Figma */
+  height: 249.33px; /* Height from Figma */
+  left: 173px; /* X position from Figma */
+  top: 70px; /* Y position from Figma */
+  transform: rotate(0deg); /* Rotation from Figma */
+  border-radius: 0px; /* Border radius from Figma */
+  z-index: 2; /* Highest stack order */
+  position: absolute;
+}
+
+
+.image5 {
+  width: 1399.45px; /* Width from Figma */
+  height: 378px; /* Height from Figma */
+  left: 0px; /* X position from Figma */
+  top: 547px; /* Y position from Figma */
+  z-index: 3; /* Highest stack order */
+  position: absolute;
+ 
+}
+
+.image2 {
+  width: 1325.92px; /* Width from Figma */
+  height: 439px; /* Height from Figma */
+  left: 67px; /* X position from Figma */
+  top: 210px; /* Y position from Figma */
+  transform: rotate(0deg); /* Rotation from Figma */
+  border-radius: 0px; /* Border radius from Figma */
+  z-index: 1; /* Higher stack order */
+  position: absolute;
+}
+
+.image3 {
+  position: absolute;
+  object-fit: cover;
+  width: 600px; /* Width from Figma */
+  height: 600px; /* Height from Figma */
+  left: 250px; /* X position from Figma */
+  top: 138px; /* Y position from Figma */
+  transform: rotate(0deg); /* Rotation from Figma */
+  border-radius: 0px; /* Border radius from Figma */
+ /* z-index: 1;  Lower stack order */
+}
+
+
+
+
+.rotating-image {
+  width: auto; /* Full width of its container */
+  height: auto;
+  animation: rotate 10s linear infinite; /* Adjust timing and other properties as needed */
+  object-fit: cover;
+}
+
+.water-ripple {
+ 
+    position: absolute; /* Allows positioning of its content */
+    left: 0; /* Align to the left of the viewport */
+    bottom: 0; /* Align to the bottom of the viewport */
+    width: 100vw; /* Full viewport width */
+    height: 30vh; /* Adjust height based on the desired visibility */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Keyframes for rotation */
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Keyframes for ripple effect */
+@keyframes ripple {
+  0% {
+      transform: scale(1) translateX(0) translateY(0);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.5) translateX(10px) translateY(10px);
+      opacity: 0.5;
+  }
+  100% {
+      transform: scale(1) translateX(0) translateY(0);
+      opacity: 1;
+  }
+}

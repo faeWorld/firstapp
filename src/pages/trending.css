@@ -1,0 +1,95 @@
+/* trending.css */
+.trending{
+    background-color: #FFFDD0;
+
+}
+/* src/pages/Trending.css */
+
+.container {
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters select,
+.filters button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.On-Trend {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.place {
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place img {
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
